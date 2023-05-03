@@ -3,7 +3,8 @@ const router = require('express').Router()
 const ClientsController = require('../controllers/clients')
 const ProductsController = require('../controllers/products')
 
-router.get('/clientes:id?', ClientsController.get)
+router.get('/clientes/:id?', ClientsController.get)
 router.post('/clientes', ClientsController.post)
+router.delete('/clientes/:id', ClientsController.remove)
 
 module.exports = router
