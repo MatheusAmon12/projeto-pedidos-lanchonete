@@ -11,7 +11,7 @@ router.delete('/clientes/:id', ClientsController.remove)
 //ROTAS RELACIONADAS AOS PRODUTOS
 router.get('/produtos/:id?', ProductsController.get)
 router.post('/produtos/', ProductsController.post)
-//router.put('/produtos/:id', ProductsController.put)
+router.put('/produtos/:id', ProductsController.put)
 //router.delete('/produtos/:id', ProductsController.remove)
 
 module.exports = router

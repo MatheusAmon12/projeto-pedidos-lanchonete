@@ -26,9 +26,20 @@ async function post(req, res){
     })
 }
 
+async function put(req, res){
+    const { id } = req.params
 
+    //PASSANDO O ID PARA O MÉTODO, EM SEGUIDA AS INFORMAÇÕES ATUALIZADAS QUE SERÃO INSERIDAS E RETORNANDO O PRODUTO ATUALIZADO
+    const product = await ProductsModel.findByIdAndUpdate({ _id: id }, req.body, {new: true})
+
+    res.send({
+        message: 'success',
+        product,
+    })
+}
 
 module.exports = {
     get,
     post,
+    put,
 }
