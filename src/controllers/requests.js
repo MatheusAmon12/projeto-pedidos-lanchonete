@@ -2,7 +2,7 @@ const RequestsModel = require('../models/requests')
 
 
 
-/*async function post(req, res){
+async function post(req, res){
     const {
         idClient,
         idProduct,
@@ -26,4 +26,4 @@ const RequestsModel = require('../models/requests')
 
 module.exports = {
     post,
-}*/
+}
