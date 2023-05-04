@@ -18,5 +18,6 @@ router.delete('/produtos/:id', ProductsController.remove)
 //ROTAS RELACIONADAS AOS PEDIDOS
 router.get('/pedidos/:id?', RequestsController.get)
 router.post('/pedidos', RequestsController.post)
+router.delete('/pedidos/:id', RequestsController.remove)
 
 module.exports = router

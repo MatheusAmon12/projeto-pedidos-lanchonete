@@ -30,7 +30,20 @@ async function post(req, res){
     })
 }
 
+async function remove(req, res){
+    const { id } = req.params
+
+    const remove = await RequestsModel.deleteOne({ _id: id })
+
+    const message = remove ? 'success' : 'error'
+
+    res.send({
+        message
+    })
+}
+
 module.exports = {
     get,
     post,
+    remove,
 }
