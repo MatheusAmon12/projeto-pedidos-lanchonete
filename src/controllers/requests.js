@@ -1,6 +1,12 @@
 const RequestsModel = require('../models/requests')
 
+async function get(req, res){
+    const requests =  await RequestsModel.find()
 
+    res.send({
+        requests
+    })
+}
 
 async function post(req, res){
     const {
@@ -25,5 +31,6 @@ async function post(req, res){
 }
 
 module.exports = {
+    get,
     post,
 }
