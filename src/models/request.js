@@ -1,10 +1,12 @@
 const mongoose = require('mongoose')
 
-const schemaRequest = new mongoose.Schema({
+const schema = new mongoose.Schema({
     idClient: String,
     idProduct: String,
     date: Number,
     status: String,
 })
 
-module.exports = schemaRequest
+const model = mongoose.model('request', schema)
+
+module.exports = model
