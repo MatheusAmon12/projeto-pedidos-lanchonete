@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 
 const app = express()
 
@@ -6,6 +7,24 @@ const db = require('./database/db')
 const router = require('./routes/routes')
 
 db.connect()
+
+const allowedOrigins = [
+    'http://127.0.0.1:5500',
+    'https://matheusamon12.github.io/front-pedidos-lanchonete/admin.html',
+    'https://matheusamon12.github.io/front-pedidos-lanchonete/client.html'
+]
+
+app.use(cors({
+    origin: function(origin, callback){
+        let allowed = true
+
+        if (!origin) allowed = true
+
+        if (!allowedOrigins.includes(origin)) allowed = false
+
+        callback(null, allowed)
+    }
+}))
 
 app.use(express.json())
 

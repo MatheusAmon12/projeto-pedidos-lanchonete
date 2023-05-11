@@ -19,5 +19,6 @@ router.delete('/produtos/:id', ProductsController.remove)
 router.get('/pedidos/:id?', RequestsController.get)
 router.post('/pedidos', RequestsController.post)
 router.delete('/pedidos/:id', RequestsController.remove)
+router.put('/pedidos/:id', RequestsController.put)
 
 module.exports = router

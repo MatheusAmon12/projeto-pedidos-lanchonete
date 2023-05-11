@@ -1,11 +1,10 @@
+const { findByIdAndUpdate } = require('../models/products')
 const RequestsModel = require('../models/requests')
 
 async function get(req, res){
     const requests =  await RequestsModel.find()
 
-    res.send({
-        requests
-    })
+    res.send(requests)
 }
 
 async function post(req, res){
@@ -42,8 +41,20 @@ async function remove(req, res){
     })
 }
 
+async function put(req, res){
+    const { id } = req.params
+
+    const request = await RequestsModel.findByIdAndUpdate({ _id: id}, req.body, {new: true})
+
+    res.send({
+        message: 'success',
+        request        
+    })
+}
+
 module.exports = {
     get,
     post,
     remove,
+    put
 }
