@@ -10,8 +10,7 @@ db.connect()
 
 const allowedOrigins = [
     'http://127.0.0.1:5500',
-    'https://matheusamon12.github.io/front-pedidos-lanchonete/admin.html',
-    'https://matheusamon12.github.io/front-pedidos-lanchonete/client.html'
+    'https://matheusamon12.github.io'
 ]
 
 app.use(cors({
