@@ -15,7 +15,7 @@ Para os arquivos JS segui o mesmo padrão de divisão de arquivos. Neles realize
 Após realizar o download dos arquivos em seu PC abra o Git Bash (caso esteja utilizando Windows) ou o terminal do seu Linux e inicie o servidor digitando:
   `npm run dev`
   
-Iniciado o server acesse o painel do administrador no endereço: <https://matheusamon12.github.io/front-pedidos-lanchonete/admin.html>. Irá se depará com a tela de login, o usuário e senha de acesso são:
+Iniciado o server acesse o painel do administrador no endereço: <https://matheusamon12.github.io/front-pedidos-lanchonete/admin.html> (O repositório do Front-End se encontra em: <https://github.com/MatheusAmon12/front-pedidos-lanchonete>). Irá se depará com a tela de login, o usuário e senha de acesso são:
   * Usuário: admin
   * Senha: 12345678
   
