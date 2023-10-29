@@ -28,7 +28,7 @@ Dessa forma terá acesso ao dashboard com as opções:
 
 Será necessário criar no **Postman** as requests para os end-points que estão na pasta **routes** dos arquivos back-end. Pois nele irá obter os id's do cliente e produto para serem utilizados na criação de pedidos que deve ser feita por meio do Postman. Ressalto que o projeto contém uma página destinada apenas ao cadastro de clientes e uma página destinada ao Administrador que poderá gerenciar as informações acerca de pedidos, clientes e cadastro de produtos.(Obs.: os pedidos devem ser feitos via Postman para o endpoint <http://localhost:8080/lanchonete/pedidos>, só após poderá vizualizá-los na dashboard). As requests que irá precisar são: GET, POST, DELETE, PUT. Segue exemplo abaixo: 
 
-<img src="C:\Users\amonm\OneDrive\Imagens\Capturas de tela\Routes Postman" alt="Rotas do Postman">
+![Routes Postman](https://github.com/MatheusAmon12/projeto-pedidos-lanchonete/assets/111083094/cbee0b84-f5a4-41a5-bd3d-d6b6448f94af)
 
 Para acessar a página de cadastro de clientes acesse: <https://matheusamon12.github.io/front-pedidos-lanchonete/client.html>. Insira as informações e cadastre.
 As demais ações de excluir pedidos, clientes, produtos, cadastro de produtos, atualização de status poderão ser feitas ao efetuar a listagem de cada entidade no dashboard do admin.
